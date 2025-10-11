@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mi Notion Personal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <h1>Mi Notion</h1>
+    <nav>
+      <button id="btn-agenda">Agenda</button>
+      <button id="btn-notas">Notas</button>
+    </nav>
+    <div class="api-config">
+      <label>API URL:</label>
+      <input id="api-url" placeholder="http://localhost:4000">
+      <label>API Key:</label>
+      <input id="api-key" placeholder="x-api-key">
+      <button id="save-config">Guardar</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header>
+      <input id="quick-input" placeholder="Escribe y pulsa Enter (ej: cacahuetecosmico recordar pagar factura el martes)">
+    </header>
+    <section id="content"></section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
